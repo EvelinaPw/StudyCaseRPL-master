@@ -87,6 +87,7 @@ namespace StudyCaseRPL.Controllers
         // GET: Categories/Delete/5
         public ActionResult Delete(int id)
         {
+            //memanggil methode delete pada DAL
             CategoriesDAL categoriesDAL = new CategoriesDAL();
             var model = categoriesDAL.GetById(id);
             return View(model);
